@@ -1,0 +1,288 @@
+{
+  "mod_elements": [
+    {
+      "name": "ArmorEmeraldHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_emerald_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/emeraldarmor/procedures/ArmorEmeraldHelmetTickEventProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArmorEmerald",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_emerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_armor/models/item/armor_emerald_helmet.json",
+          "src/main/resources/assets/emerald_armor/models/item/armor_emerald_boots.json",
+          "src/main/resources/assets/emerald_armor/models/item/armor_emerald_leggings.json",
+          "src/main/resources/assets/emerald_armor/models/item/armor_emerald_chestplate.json",
+          "src/main/java/net/mcreator/emeraldarmor/item/ArmorEmeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Crafthelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafthelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/crafthelmet.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "CraftChestplate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/craft_chestplate.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "CraftLeggings",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/craft_leggings.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "Craftboot",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftboot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/craftboot.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "EmeraldSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldarmor/item/EmeraldSwordItem.java",
+          "src/main/resources/assets/emerald_armor/models/item/emerald_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldarmor/item/EmeraldPickaxeItem.java",
+          "src/main/resources/assets/emerald_armor/models/item/emerald_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_armor/models/item/emerald_axe.json",
+          "src/main/java/net/mcreator/emeraldarmor/item/EmeraldAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldSpade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_spade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_armor/models/item/emerald_spade.json",
+          "src/main/java/net/mcreator/emeraldarmor/item/EmeraldSpadeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldarmor/item/EmeraldHoeItem.java",
+          "src/main/resources/assets/emerald_armor/models/item/emerald_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldSwordCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/emerald_sword_craft.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "EmeraldPickaxeCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_pickaxe_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/emerald_pickaxe_craft.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "EmeraldAxeCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/emerald_axe_craft.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "EmeraldSpadeCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_spade_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/emerald_spade_craft.json"
+        ]
+      },
+      "path": "~/Craft"
+    },
+    {
+      "name": "EmeraldHoeCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_hoe_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_armor/recipes/emerald_hoe_craft.json"
+        ]
+      },
+      "path": "~/Craft"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:EmeraldSword"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:EmeraldPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:EmeraldAxe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:EmeraldSpade"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:EmeraldHoe"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.emerald_armor.armor_emerald_helmet": "Emerald Helmet",
+      "item.emerald_armor.armor_emerald_boots": "Emerald Boots",
+      "item.emerald_armor.armor_emerald_leggings": "Emerald Leggings",
+      "item.emerald_armor.armor_emerald_chestplate": "Emerald Chestplate",
+      "item.emerald_armor.emerald_sword": "Emerald Sword",
+      "item.emerald_armor.emerald_pickaxe": "Emerald Pickaxe",
+      "item.emerald_armor.emerald_axe": "Emerald Axe",
+      "item.emerald_armor.emerald_spade": "Emerald Spade",
+      "item.emerald_armor.emerald_hoe": "Emerald Hoe"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/emeraldarmor/init/EmeraldArmorModTabs.java",
+      "src/main/java/net/mcreator/emeraldarmor/EmeraldArmorMod.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/emeraldarmor/init/EmeraldArmorModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Craft",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "emerald_armor",
+    "modName": "Emerald Armor",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.emeraldarmor"
+  },
+  "mcreatorVersion": 202500228610
+}
