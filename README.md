@@ -13,10 +13,6 @@ This mod adopts a vanilla style. Adding it to Minecraft will make you feel like 
 
 This mod is available on both the client and server. For the fabric version, you need to install the [Fabric API](https://modrinth.com/mod/fabric-api) (in development).
 
-
-This mod was created with [MCreator](https://mcreator.net/)
-
-
 <details>
 <summary>Craft</summary>
 
