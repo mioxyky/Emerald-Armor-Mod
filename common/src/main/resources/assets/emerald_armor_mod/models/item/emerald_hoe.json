@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emerald_armor_mod:item/emerald_hoe"
+  }
+}
