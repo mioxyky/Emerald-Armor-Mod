@@ -10,20 +10,20 @@
 
 <p align="center">
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
-    <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=for-the-badge" height="20" alt="Latest Release" />
+    <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=flat-square" alt="Latest Release" />
   </a>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge" alt="License" />
+    <img src="https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=flat-square" alt="License" />
   </a>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/issues">
-    <img src="https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=for-the-badge" alt="Issues" />
+    <img src="https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=flat-square" alt="Issues" />
   </a>
   <br/>
   <a href="https://modrinth.com/mod/emerald-armor">
-    <img src="https://img.shields.io/badge/Modrinth-Download-green?style=for-the-badge&logo=modrinth" alt="Modrinth" />
+    <img src="https://img.shields.io/badge/Modrinth-Download-green?style=flat-square&logo=modrinth" alt="Modrinth" />
   </a>
   <a href="https://www.curseforge.com/minecraft/mc-mods/emerald-armorr">
-    <img src="https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge" alt="CurseForge" />
+    <img src="https://img.shields.io/badge/CurseForge-Download-orange?style=flat-square&logo=curseforge" alt="CurseForge" />
   </a>
 </p>
 
