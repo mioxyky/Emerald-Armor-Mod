@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
-    <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=for-the-badge" alt="Latest Release" />
+    <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=for-the-badge" height="28" alt="Latest Release" />
   </a>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge" alt="License" />
