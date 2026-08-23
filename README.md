@@ -8,6 +8,7 @@
   <strong>A multi-loader Minecraft mod adding emerald armor and tools</strong>
 </p>
 
+<div align="center">
 <p>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
     <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=flat-square" alt="Latest Release" />
@@ -32,6 +33,7 @@
     <img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </p>
+</div>
 
 ---
 
