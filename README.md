@@ -9,20 +9,20 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername/Emerald-Armor-Mod/releases/latest">
+  <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
     <img src="https://img.shields.io/github/v/release/yourusername/Emerald-Armor-Mod?label=Latest%20Release&style=for-the-badge" alt="Latest Release" />
   </a>
-  <a href="https://github.com/yourusername/Emerald-Armor-Mod/blob/main/LICENSE">
+  <a href="https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/yourusername/Emerald-Armor-Mod?style=for-the-badge" alt="License" />
   </a>
-  <a href="https://github.com/yourusername/Emerald-Armor-Mod/issues">
+  <a href="https://github.com/mioxyky/Emerald-Armor-Mod/issues">
     <img src="https://img.shields.io/github/issues/yourusername/Emerald-Armor-Mod?style=for-the-badge" alt="Issues" />
   </a>
   <br/>
-  <a href="https://modrinth.com/mod/emerald-armor-mod">
+  <a href="https://modrinth.com/mod/emerald-armor">
     <img src="https://img.shields.io/badge/Modrinth-Download-green?style=for-the-badge&logo=modrinth" alt="Modrinth" />
   </a>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/emerald-armor-mod">
+  <a href="https://www.curseforge.com/minecraft/mc-mods/emerald-armorr">
     <img src="https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge" alt="CurseForge" />
   </a>
 </p>
