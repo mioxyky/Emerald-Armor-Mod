@@ -1,7 +1,54 @@
+# Gradle / Build
 .gradle/
 build/
 **/build/
-run/
-**/run/
+.gradle/caches/
+.gradle/daemon/
+.gradle/wrapper/dists/
+*.lock
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+
+# Eclipse
+bin/
+
+# IntelliJ
+out/
+*.iml
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs / Temp
 *.log
 *.class
+*.tmp
+hs_err_pid*
+replay_pid*
+
+# Run directories
+run/
+**/run/
+run/config/
+run/mods/
+run/logs/
+run/crash-reports/
+run/saves/
+run/resourcepacks/
+run/shaderpacks/
+run/world/
+
+# Local env
+.env
+.env.local

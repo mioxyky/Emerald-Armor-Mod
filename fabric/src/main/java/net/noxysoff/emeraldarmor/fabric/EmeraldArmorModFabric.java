@@ -2,11 +2,12 @@ package net.noxysoff.emeraldarmor.fabric;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -16,9 +17,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
@@ -44,20 +45,21 @@ public final class EmeraldArmorModFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, id("emerald_armor_mod"), FabricItemGroup.builder()
-                .title(Component.translatable("itemGroup.emerald_armor_mod.emerald_armor_mod"))
-                .icon(() -> new ItemStack(EMERALD_HELMET))
-                .displayItems((parameters, output) -> {
-                    output.accept(EMERALD_HELMET);
-                    output.accept(EMERALD_CHESTPLATE);
-                    output.accept(EMERALD_LEGGINGS);
-                    output.accept(EMERALD_BOOTS);
-                    output.accept(EMERALD_SWORD);
-                    output.accept(EMERALD_PICKAXE);
-                    output.accept(EMERALD_AXE);
-                    output.accept(EMERALD_SHOVEL);
-                    output.accept(EMERALD_HOE);
-                }).build());
+        // Register items in creative tabs
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
+            entries.prepend(EMERALD_HELMET);
+            entries.prepend(EMERALD_CHESTPLATE);
+            entries.prepend(EMERALD_LEGGINGS);
+            entries.prepend(EMERALD_BOOTS);
+            entries.prepend(EMERALD_SWORD);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(entries -> {
+            entries.prepend(EMERALD_PICKAXE);
+            entries.prepend(EMERALD_AXE);
+            entries.prepend(EMERALD_SHOVEL);
+            entries.prepend(EMERALD_HOE);
+        });
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             for (ServerPlayer player : server.getPlayerList().getPlayers()) {

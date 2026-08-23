@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "emerald-armor-mod",
+  "version": "1.0.0",
+  "name": "Emerald Armor Mod",
+  "summary": "Adds emerald armor and emerald tools that sit below diamond, with Hero of the Village II on the helmet.",
+  "description": "Emerald Armor Mod adds a full set of emerald armor (helmet, chestplate, leggings, boots) and emerald tools (sword, pickaxe, axe, shovel, hoe) to Minecraft 1.20.1.\n\nBalance sits just below diamond:\n- Armor durability multiplier: 30 (diamond: 33)\n- Armor protection: 2 / 5 / 6 / 2 (diamond: 3 / 6 / 8 / 3)\n- Armor toughness: 1.0 (diamond: 2.0)\n- Tool durability: 1400 (diamond: 1561)\n- Tool mining speed: 7.0 (diamond: 8.0)\n- Enchantability: 8 (diamond: 10)\n\nWearing the emerald helmet grants Hero of the Village II while equipped.\n\nAvailable for Fabric, Forge, and NeoForge 1.20.1.",
+  "categories": ["armor", "tools", "equipment", "utility", "fabric", "forge", "neoforge"],
+  "license": "MIT",
+  "additionalCategories": [],
+  "tags": ["emerald", "armor", "tools"],
+  "icon": "common/src/main/resources/assets/emerald_armor_mod/icon.png",
+  "issues": "https://github.com/Noxysoff/Emerald-Armor-Mod/issues",
+  "sources": "https://github.com/Noxysoff/Emerald-Armor-Mod",
+  "project_links": {
+    "GitHub": "https://github.com/Noxysoff/Emerald-Armor-Mod",
+    "Wiki": "https://github.com/Noxysoff/Emerald-Armor-Mod/wiki"
+  },
+  "gallery": [],
+  "modrinth": {
+    "env": {
+      "client": "required",
+      "server": "required"
+    }
+  },
+  "versions": ["1.20.1"]
+}

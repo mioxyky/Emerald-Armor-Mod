@@ -1,5 +1,5 @@
 plugins {
-    id 'dev.architectury.loom' version '1.11.445'
+    id 'dev.architectury.loom' version '1.9.428'
 }
 
 base {
@@ -30,4 +30,12 @@ processResources {
     filesMatching('fabric.mod.json') {
         expand project.properties
     }
+}
+
+// Ensure resources are included in the JAR
+jar {
+    from(processResources.outputs) {
+        into ''
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

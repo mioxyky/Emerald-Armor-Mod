@@ -1,7 +1,6 @@
 package net.noxysoff.emeraldarmor.forge;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -10,10 +9,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
@@ -21,6 +19,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -37,7 +36,6 @@ public final class EmeraldArmorModForge {
     private static final ArmorMaterial EMERALD_ARMOR = new EmeraldArmorMaterial();
 
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
-    private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     public static final RegistryObject<Item> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ArmorItem(EMERALD_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ArmorItem(EMERALD_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
@@ -49,26 +47,27 @@ public final class EmeraldArmorModForge {
     public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register("emerald_shovel", () -> new ShovelItem(EMERALD_TIER, 1.5F, -3.0F, new Item.Properties()));
     public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register("emerald_hoe", () -> new HoeItem(EMERALD_TIER, -3, 0.0F, new Item.Properties()));
 
-    public static final RegistryObject<CreativeModeTab> EMERALD_TAB = TABS.register("emerald_armor_mod", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.emerald_armor_mod.emerald_armor_mod"))
-            .icon(() -> new ItemStack(EMERALD_HELMET.get()))
-            .displayItems((parameters, output) -> {
-                output.accept(EMERALD_HELMET.get());
-                output.accept(EMERALD_CHESTPLATE.get());
-                output.accept(EMERALD_LEGGINGS.get());
-                output.accept(EMERALD_BOOTS.get());
-                output.accept(EMERALD_SWORD.get());
-                output.accept(EMERALD_PICKAXE.get());
-                output.accept(EMERALD_AXE.get());
-                output.accept(EMERALD_SHOVEL.get());
-                output.accept(EMERALD_HOE.get());
-            }).build());
-
     public EmeraldArmorModForge() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         ITEMS.register(modBus);
-        TABS.register(modBus);
         MinecraftForge.EVENT_BUS.addListener(this::onPlayerTick);
+        // Register creative tab contents
+        modBus.addListener(this::addCreative);
+    }
+
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(EMERALD_HELMET);
+            event.accept(EMERALD_CHESTPLATE);
+            event.accept(EMERALD_LEGGINGS);
+            event.accept(EMERALD_BOOTS);
+            event.accept(EMERALD_SWORD);
+        } else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(EMERALD_PICKAXE);
+            event.accept(EMERALD_AXE);
+            event.accept(EMERALD_SHOVEL);
+            event.accept(EMERALD_HOE);
+        }
     }
 
     private void onPlayerTick(TickEvent.PlayerTickEvent event) {

@@ -84,15 +84,15 @@ Run these from the repository root. On Windows PowerShell, use the same commands
 ### Build/export jars
 
 ```bash
-gradle build
+./gradlew build
 ```
 
 Individual loader jars:
 
 ```bash
-gradle :fabric:build
-gradle :forge:build
-gradle :neoforge:build
+./gradlew :fabric:build
+./gradlew :forge:build
+./gradlew :neoforge:build
 ```
 
 Built jars are exported under:
