@@ -9,9 +9,11 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
@@ -19,6 +21,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.util.MutableHashedLinkedMap;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -56,17 +59,28 @@ public final class EmeraldArmorModForge {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        // Get the entries map which maintains insertion order
+        @SuppressWarnings("unchecked")
+        MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> entries =
+            (MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility>) event.getEntries();
+
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(EMERALD_HELMET);
-            event.accept(EMERALD_CHESTPLATE);
-            event.accept(EMERALD_LEGGINGS);
-            event.accept(EMERALD_BOOTS);
-            event.accept(EMERALD_SWORD);
+            // Armor: Iron -> Gold -> Emerald -> Diamond -> Netherite
+            // Insert full emerald armor set after the LAST gold armor piece (boots)
+            entries.putAfter(new ItemStack(Items.GOLDEN_BOOTS), new ItemStack(EMERALD_HELMET.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_HELMET.get()), new ItemStack(EMERALD_CHESTPLATE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_CHESTPLATE.get()), new ItemStack(EMERALD_LEGGINGS.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_LEGGINGS.get()), new ItemStack(EMERALD_BOOTS.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            // Sword: Wood -> Stone -> Iron -> Gold -> Emerald -> Diamond -> Netherite
+            entries.putAfter(new ItemStack(Items.GOLDEN_SWORD), new ItemStack(EMERALD_SWORD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         } else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(EMERALD_PICKAXE);
-            event.accept(EMERALD_AXE);
-            event.accept(EMERALD_SHOVEL);
-            event.accept(EMERALD_HOE);
+            // Tools: Iron -> Gold -> Emerald -> Diamond -> Netherite
+            // Vanilla order: Pickaxe -> Axe -> Shovel -> Hoe (within each tier)
+            // Insert full emerald tool set after the LAST gold tool (hoe)
+            entries.putAfter(new ItemStack(Items.GOLDEN_HOE), new ItemStack(EMERALD_PICKAXE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_PICKAXE.get()), new ItemStack(EMERALD_AXE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_AXE.get()), new ItemStack(EMERALD_SHOVEL.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.putAfter(new ItemStack(EMERALD_SHOVEL.get()), new ItemStack(EMERALD_HOE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }
 

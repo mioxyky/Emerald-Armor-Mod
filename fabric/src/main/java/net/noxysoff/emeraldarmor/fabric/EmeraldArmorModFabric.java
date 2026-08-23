@@ -45,20 +45,28 @@ public final class EmeraldArmorModFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // Register items in creative tabs
+        // Register items in creative tabs at specific positions (after gold, before diamond)
+        // Combat tab: Armor and Sword
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
-            entries.prepend(EMERALD_HELMET);
-            entries.prepend(EMERALD_CHESTPLATE);
-            entries.prepend(EMERALD_LEGGINGS);
-            entries.prepend(EMERALD_BOOTS);
-            entries.prepend(EMERALD_SWORD);
+            // Armor: Iron -> Gold -> Emerald -> Diamond -> Netherite
+            // Insert full emerald armor set after the LAST gold armor piece (boots)
+            entries.addAfter(Items.GOLDEN_BOOTS, EMERALD_HELMET);
+            entries.addAfter(EMERALD_HELMET, EMERALD_CHESTPLATE);
+            entries.addAfter(EMERALD_CHESTPLATE, EMERALD_LEGGINGS);
+            entries.addAfter(EMERALD_LEGGINGS, EMERALD_BOOTS);
+            // Sword: Wood -> Stone -> Iron -> Gold -> Emerald -> Diamond -> Netherite
+            entries.addAfter(Items.GOLDEN_SWORD, EMERALD_SWORD);
         });
 
+        // Tools & Utilities tab: Tools
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(entries -> {
-            entries.prepend(EMERALD_PICKAXE);
-            entries.prepend(EMERALD_AXE);
-            entries.prepend(EMERALD_SHOVEL);
-            entries.prepend(EMERALD_HOE);
+            // Tools: Iron -> Gold -> Emerald -> Diamond -> Netherite
+            // Vanilla order: Pickaxe -> Axe -> Shovel -> Hoe (within each tier)
+            // Insert full emerald tool set after the LAST gold tool (hoe)
+            entries.addAfter(Items.GOLDEN_HOE, EMERALD_PICKAXE);
+            entries.addAfter(EMERALD_PICKAXE, EMERALD_AXE);
+            entries.addAfter(EMERALD_AXE, EMERALD_SHOVEL);
+            entries.addAfter(EMERALD_SHOVEL, EMERALD_HOE);
         });
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
