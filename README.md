@@ -8,15 +8,15 @@
   <strong>A multi-loader Minecraft mod adding emerald armor and tools</strong>
 </p>
 
-<p align="center">
+<p>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
     <img src="https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?label=Latest%20Release&style=flat-square" alt="Latest Release" />
   </a>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=flat-square" alt="License" />
+    <img src="https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=flat-square&color=black" alt="License" />
   </a>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/issues">
-    <img src="https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=flat-square" alt="Issues" />
+    <img src="https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=flat-square&color=red" alt="Issues" />
   </a>
   <br/>
   <a href="https://modrinth.com/mod/emerald-armor">
@@ -24,6 +24,12 @@
   </a>
   <a href="https://www.curseforge.com/minecraft/mc-mods/emerald-armorr">
     <img src="https://img.shields.io/badge/CurseForge-Download-orange?style=flat-square&logo=curseforge" alt="CurseForge" />
+  </a>
+  <a href="https://ko-fi.com/noxysoff">
+    <img src="https://img.shields.io/badge/Donation-Support-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white" alt="Donation" />
+  </a>
+  <a href="https://discord.gg/bSVCkhbjaq">
+    <img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </p>
 
