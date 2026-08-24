@@ -33,49 +33,23 @@
 
 ---
 
-## ✨ Features
+## ✨・Features :
 
-Emerald Armor Mod adds a complete set of **emerald armor and tools** to Minecraft.
+The Emerald Set mod is a Minecraft mod that adds emerald tools and armor. Emerald armor and tools are slightly better than diamond ones.
 
-* 🛡️ Emerald Helmet
-* 🛡️ Emerald Chestplate
-* 🛡️ Emerald Leggings
-* 🛡️ Emerald Boots
-* ⚔️ Emerald Sword
-* ⛏️ Emerald Pickaxe
-* 🪓 Emerald Axe
-* 🧹 Emerald Shovel
-* 🌱 Emerald Hoe
-* ✨ Emerald Helmet grants **Hero of the Village II** while equipped
+The Emerald Armor Effects :
+- **Helmet:** Hero Of The village 3
 
-Emerald equipment is designed to sit **between iron and diamond** in progression.
 
----
+## ⚠️・Warning
 
-## 📦 Compatibility
+This mod is available on both the client and server. For the fabric version, you need to install the [Fabric API](https://modrinth.com/mod/fabric-api).
 
-| Minecraft  | Loaders                   |
-| ---------- | ------------------------- |
-| **1.20.1** | Fabric · Forge · NeoForge |
+<details>
+<summary>Craft</summary>
 
-**Java:** 17+
+![craft](https://cdn.modrinth.com/data/cached_images/0bab3b03c93906c57607f23b3985c5d2f74865ee.png)
 
----
+</details>
 
-## 🚀 Installation
-
-1. Download the version for your loader.
-2. Place the `.jar` file in your Minecraft `mods` folder.
-3. Launch Minecraft with the corresponding loader.
-
-> ⚠️ Only install the JAR matching your Minecraft loader.
-
----
-
-## 🔗 Links
-
-* [GitHub](https://github.com/mioxyky/Emerald-Armor-Mod?utm_source=chatgpt.com)
-* [Modrinth](https://modrinth.com/mod/emerald-armor-mod?utm_source=chatgpt.com)
-* [CurseForge](https://www.curseforge.com/minecraft/mc-mods/emerald-armor-mod?utm_source=chatgpt.com)
-* [Issues](https://github.com/mioxyky/Emerald-Armor-Mod/issues?utm_source=chatgpt.com)
-
+![mod](https://cdn.modrinth.com/data/cached_images/95eef103a563e41856fd96a9b724a5e3c74a848a_0.webp)
