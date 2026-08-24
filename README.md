@@ -79,14 +79,3 @@ Emerald equipment is designed to sit **between iron and diamond** in progression
 * [CurseForge](https://www.curseforge.com/minecraft/mc-mods/emerald-armor-mod?utm_source=chatgpt.com)
 * [Issues](https://github.com/mioxyky/Emerald-Armor-Mod/issues?utm_source=chatgpt.com)
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<p align="center">
-  Made with ❤️ for the Minecraft community
-</p>
