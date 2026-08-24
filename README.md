@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://cdn.modrinth.com/data/cached_images/d2a58042944716b89c73b6dfc40aaf3ef754476b.png" alt="Emerald Armor Mod" width="180" />
-</p>
-
 <h1 align="center">Emerald Armor Mod</h1>
 
 <p align="center">
