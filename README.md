@@ -9,7 +9,7 @@
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/hfR6sUO8?style=for-the-badge&logo=modrinth)
 ![CurseForge Downloads](https://img.shields.io/curseforge/dt/1172253?style=for-the-badge&logo=curseforge&color=orange)
 [![Donation](https://img.shields.io/badge/Donation-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/noxysoff)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/bSVCkhbjaq)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/bSVCkhbjaq)
 
 </div>
 
