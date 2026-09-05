@@ -1,9 +1,5 @@
 <h1 align="center">Emerald Armor Mod</h1>
 
-<p align="center">
-  <strong>A multi-loader Minecraft mod adding emerald armor and tools</strong>
-</p>
-
 <div align="center">
 <p>
   <a href="https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest">
@@ -31,19 +27,35 @@
 </p>
 </div>
 
+
+<div align="center">
+
+[![Github Release](https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth)](https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest)
+[![Licence](https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth)](https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE)
+[![Licence](https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth)](https://github.com/mioxyky/Emerald-Armor-Mod/issues)
+
+![Modrinth Downloads](https://img.shields.io/modrinth/dt/hfR6sUO8?style=for-the-badge&logo=modrinth)
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/1172253?style=for-the-badge&logo=curseforge)
+[![Donation](https://img.shields.io/badge/Donation-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/noxysoff)
+[![Discord](https://img.shields.io/curseforge/dt/1172253?style=for-the-badge&logo=curseforge)](https://discord.gg/bSVCkhbjaq)
+
+</div>
+
+Emerald Armor Mod is a client and server mod Forge and [Fabric](https://fabricmc.net).
+
+[Fabric API](https://modrinth.com/mod/fabric-api) is required for Fabric version.
+
 ---
 
-## ✨・Features :
+A multi-loader Minecraft mod adding emerald armor and tools
+
+## Features :
 
 The Emerald Set mod is a Minecraft mod that adds emerald tools and armor. Emerald armor and tools are slightly better than diamond ones.
 
 The Emerald Armor Effects :
 - **Helmet:** Hero Of The village 3
 
-
-## ⚠️・Warning
-
-This mod is available on both the client and server. For the fabric version, you need to install the [Fabric API](https://modrinth.com/mod/fabric-api).
 
 <details>
 <summary>Craft</summary>
