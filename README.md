@@ -19,7 +19,7 @@ Emerald Armor Mod is a client and server mod Forge and [Fabric](https://fabricmc
 
 ---
 
-A multi-loader Minecraft mod adding emerald armor and tools
+*A multi-loader Minecraft mod adding emerald armor and tools*
 
 ## Features :
 
