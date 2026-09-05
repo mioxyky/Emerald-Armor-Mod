@@ -28,6 +28,7 @@ The Emerald Set mod is a Minecraft mod that adds emerald tools and armor. Emeral
 The Emerald Armor Effects :
 - **Helmet:** Hero Of The village 3
 
+---
 
 <details>
 <summary>Craft</summary>
