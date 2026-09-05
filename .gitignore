@@ -52,3 +52,7 @@ run/world/
 # Local env
 .env
 .env.local
+
+#claude
+.claude/
+graphify-out/
