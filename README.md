@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![Github Release](https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth)](https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest)
-[![Licence](https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth&color=black)](https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE)
-[![issues](https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=modrinth&color=red)](https://github.com/mioxyky/Emerald-Armor-Mod/issues)
+[![Github Release](https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github)](https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest)
+[![Licence](https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github&color=black)](https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE)
+[![issues](https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github&color=red)](https://github.com/mioxyky/Emerald-Armor-Mod/issues)
 
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/hfR6sUO8?style=for-the-badge&logo=modrinth)
 ![CurseForge Downloads](https://img.shields.io/curseforge/dt/1172253?style=for-the-badge&logo=curseforge&color=orange)
