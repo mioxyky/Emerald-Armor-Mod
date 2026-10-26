@@ -5,11 +5,11 @@
 [![Github Release](https://img.shields.io/github/v/release/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github)](https://github.com/mioxyky/Emerald-Armor-Mod/releases/latest)
 [![Licence](https://img.shields.io/github/license/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github&color=black)](https://github.com/mioxyky/Emerald-Armor-Mod/blob/main/LICENSE)
 [![issues](https://img.shields.io/github/issues/mioxyky/Emerald-Armor-Mod?style=for-the-badge&logo=github&color=red)](https://github.com/mioxyky/Emerald-Armor-Mod/issues)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/bSVCkhbjaq)
+
 
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/hfR6sUO8?style=for-the-badge&logo=modrinth)
 ![CurseForge Downloads](https://img.shields.io/curseforge/dt/1172253?style=for-the-badge&logo=curseforge&color=orange)
-[![Donation](https://img.shields.io/badge/Donation-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/noxysoff)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/bSVCkhbjaq)
 
 </div>
 
